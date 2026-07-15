@@ -14,32 +14,39 @@ A full-stack inventory management application built to help businesses track and
 ## 🖼️ Screenshots
 
 ### Dashboard
-| Light Mode | Dark Mode |
-|:---:|:---:|
+
+|                     Light Mode                      |                     Dark Mode                      |
+| :-------------------------------------------------: | :------------------------------------------------: |
 | ![Light Dashboard](https://i.imgur.com/NAG8egi.png) | ![Dark Dashboard](https://i.imgur.com/8ByfnaQ.png) |
 
 ### Products
+
 ![Products](https://i.imgur.com/5mEHPxm.png)
 
 ### Categories
+
 ![Categories](https://i.imgur.com/qL483tD.png)
 
 ### Orders
-| Order View 1 | Order View 2 |
-|:---:|:---:|
+
+|                Order View 1                |                       Order View 2                        |
+| :----------------------------------------: | :-------------------------------------------------------: |
 | ![Orders](https://i.imgur.com/JglJjoG.png) | ![Orders Alternate View](https://i.imgur.com/AzshwJo.png) |
 
 ## 🛠️ Tech Stack
 
 **Frontend**
+
 - React
 - (Vite / React Router / Axios, depending on setup)
 
 **Backend**
+
 - Node.js
 - Express.js
 
 **Database**
+
 - MongoDB
 
 ## 📁 Project Structure
@@ -53,33 +60,39 @@ inventory-manager/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js installed
 - MongoDB instance (local or cloud, e.g. MongoDB Atlas)
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/your-username/inventory-manager.git
 cd inventory-manager
 ```
 
 ### 2. Setup the Backend
+
 ```bash
 cd backend
 npm install
 ```
 
 Create a `.env` file in the `bachend` folder with your environment variables, for example:
+
 ```
 PORT=5050
 MONGODB_URI=your_mongodb_connection_string
 ```
 
 Run the backend:
+
 ```bash
 npm run dev
 ```
 
 ### 3. Setup the Frontend
+
 ```bash
 cd ../frontend
 npm install
