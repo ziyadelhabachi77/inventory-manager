@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  /* Light theme  */
+  --color-bg-main: #f5f6f8;
+  --color-bg-secondary: #fff;
+  --color-text: #475569;
+  --color-text-active: #607afb;
+  --color-bg-link-active: #eff1ff;
+  --border-color: #b8b6b64c;
+  --color-title: rgba(0, 0, 0, 0.826);
+}
+
+.dark {
+  /* Dark theme */
+  --color-bg-main: #0f1323;
+  --color-bg-secondary: #1e293b;
+  --color-text: #94a3b8;
+  --color-text-active: #fff;
+  --color-bg-link-active: #3b82f6;
+  --border-color: #ede8e821;
+  --color-title: #fff;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  scroll-behavior: smooth;
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .section-header {
+    @apply text-2xl font-semibold;
+    color: var(--color-title);
+  }
+  .section-header-2 {
+    @apply text-xl font-semibold;
+    color: var(--color-title);
+  }
+}
+
+@theme {
+  --breakpoint-xs: 25rem;
+}
+
+
+

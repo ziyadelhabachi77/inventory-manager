@@ -1,0 +1,10 @@
+export { default as DashboardPage } from "./DashboardPage";
+export { default as ProductsPage } from "./ProductsPage";
+export { default as CategoriesPage } from "./CategoryPage";
+export { default as OrdersPage } from "./OrdersPage";
+export { default as SuppliersPage } from "./SuppliersPage";
+export {default as Layout} from "./Layout";
+export {default as EditProductPage} from "./EditProductPage";
+export {default as CreateOrder} from "./CreateOrder";
+export {default as viewOrderPage} from "./ViewOrderPage";
+export {default as ViewSupplierPage} from "./ViewSupplierPage";
